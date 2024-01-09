@@ -1,4 +1,4 @@
-<textarea data-markdown>
+<textarea>
 <span class="menu-title" style="display: none">進度報告</span>
 </textarea>
 
