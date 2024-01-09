@@ -7,3 +7,16 @@
 .reveal h6 {
     text-transform: none;
 }
+
+/* table border */
+.reveal th {
+    border: 2px solid;
+}
+
+.reveal td {
+    border: 2px solid;
+}
+
+.reveal table {
+    border: 2px solid;
+}
