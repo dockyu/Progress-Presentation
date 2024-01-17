@@ -18,3 +18,9 @@
 
 ## 圖床
 [ Presentation-resource](https://gitlab.com/HelloWorldOvO/presentation-resource)
+
+--
+
+## 匯出pdf
+1. 在根網址加上`/?print-pdf`
+2. `ctrl`+`P`
