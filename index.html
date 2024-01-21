@@ -52,6 +52,8 @@
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
 	<script src="plugin/menu/menu.js"></script>
 	<script src="plugin/pointer/pointer.js"></script>
 
@@ -72,7 +74,9 @@
 
 			disableLayout: false,
 			hash: true,
-			slideNumber: 'c/t',
+			slideNumber: 'c/t', // 投影片頁碼
+			mouseWheel: true, // 滑鼠滾輪可以切換簡報
+			touch: true, // 滑動方式切換投影片(僅限支援觸控裝置)
 
 			customcontrols: {
 				controls: [
@@ -100,8 +104,9 @@
 
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealChalkboard, RevealCustomControls,
-				RevealMarkdown, RevealHighlight, RevealNotes,
-				RevealMenu, RevealPointer],
+					RevealMarkdown, RevealHighlight, RevealNotes,
+					RevealZoom, RevealMath,
+					RevealMenu, RevealPointer],
 
 			menu: {
 				// Specifies which side of the presentation the menu will
