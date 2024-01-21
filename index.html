@@ -246,25 +246,6 @@
 			},
 		});
 
-
-
-		Reveal.addEventListener('slidechanged', function (event) {
-			// 檢查當前頁面是否有特定class
-			if (event.currentSlide.classList.contains('no-scale')) {
-				// 有no-scale class，設定為不允許縮放
-				Reveal.configure({
-					minScale: 1,
-					maxScale: 1
-				});
-			} else {
-				// 沒有no-scale class，使用預設縮放設定
-				Reveal.configure({
-					minScale: 0.2 , // 預設最小縮放值
-					maxScale: 2.0  // 預設最大縮放值
-        });
-			}
-		});
-
 		Reveal.configure({
 			showNotes: false,
 			pdfMaxPagesPerSlide: 1
