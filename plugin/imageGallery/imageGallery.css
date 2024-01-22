@@ -1,0 +1,35 @@
+/* 定義按鈕的樣式 */
+.image-container {
+  position: relative;
+}
+
+.previous_button,
+.next_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.previous_button:hover,
+.next_button:hover {
+  background-color: #0056b3;
+}
+
+.previous_button {
+  left: 10px;
+}
+
+.next_button {
+  right: 10px;
+}
+
+  
