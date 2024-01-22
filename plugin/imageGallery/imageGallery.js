@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
       var canvasContext = canvas.getContext('2d');
       var previousButton = container.querySelector('.previous_button');
       var nextButton = container.querySelector('.next_button');
+
+      // 創建並隱藏每個圖片的 <img> 元素，同時設置 data-src 屬性
+      var imageElements = [];
+      imageUrls.forEach(function(url, index) {
+        var img = new Image();
+        img.setAttribute('data-src', url); // 設置 data-src 屬性
+        img.style.display = 'none'; // 隱藏圖片
+        container.appendChild(img);
+        imageElements.push(img);
+      });
   
       function goToPreviousImage() {
         imageShownIndex = (imageShownIndex == 0) ? imageUrls.length - 1 : imageShownIndex - 1;
